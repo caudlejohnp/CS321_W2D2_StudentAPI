@@ -6,10 +6,10 @@ namespace CS321_W2D2_StudentAPI.Services
 {
     public interface IStudentsService
     {
-        IEnumerable<Student> GetAll();
-        Student Get(int id);
-        Student Add(Student student);
-        Student Update(Student student);
-        void Remove(Student student);
+        Student Add(Student student);       //CREATE
+        Student Get(int id);                //READ
+        Student Update(Student student);    //UPDATE
+        void Remove(Student student);       //DELETE
+        IEnumerable<Student> GetAll();      //LIST
     }
 }
